@@ -31,3 +31,62 @@ The designs were created to the following widths:
   font-weight: 500;
   font-style: normal;
 }
+body{
+    background: var(--Grey100);
+    margin: 0px;
+    font-family: 'Barlow';
+    font-size: var(--FontSize);
+}
+
+.bod{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
+    height: 95vh;
+}
+
+.container{
+    width: 70vw;
+    height: 70vh;
+    overflow: hidden;  
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & section{
+        height: 50%;
+        overflow: hidden;
+    }
+}
+
+.box{
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+
+    &.d{
+        background: var(--Purple500);
+    }
+}
+
+.title{
+    position: fixed;
+    & img{
+        border-radius: 50%;
+    }
+    & p{
+        margin: 50px 80px;
+    }
+    & h2 {
+        margin: -50px 80px;
+    }
+}
+
+h1{
+    margin: 70px 20px;
+}
