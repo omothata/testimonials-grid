@@ -38,6 +38,7 @@ body{
     font-size: var(--FontSize);
 }
 
+
 .bod{
     display: flex;
     justify-content: center; /* Centers horizontally */
@@ -45,16 +46,18 @@ body{
     height: 95vh;
 }
 
+
 .container{
-    width: 70vw;
+    width: 75vw;
     height: 70vh;
-    overflow: hidden;  
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
 .row{
+    width: 75%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -64,14 +67,38 @@ body{
     }
 }
 
+.top, .bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.column{
+    width: 25%;
+    &.box{
+        height: 500px;
+    }
+}
+
 .box{
     border-radius: 20px;
     color: white;
     padding: 10px;
-
+    overflow: hidden;
     &.d{
         background: var(--Purple500);
     }
+    &.f{
+        background: var(--Grey500);
+    }
+    &.g{
+        background: var(--DarkBlue);
+    }
+    &.h{
+        background: var(--White);
+        color: black;
+    }
+
 }
 
 .title{
@@ -89,4 +116,9 @@ body{
 
 h1{
     margin: 70px 20px;
+    font-size: var(--FontSize);
+}
+
+p{
+    margin: -50px 20px;
 }
